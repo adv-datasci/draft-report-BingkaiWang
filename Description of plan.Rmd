@@ -1,0 +1,11 @@
+---
+title: "Description of Plan"
+author: "Bingkai Wang"
+date: "August 31, 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
