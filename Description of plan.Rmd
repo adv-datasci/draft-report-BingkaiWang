@@ -9,3 +9,18 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+## Project: option 3
+#### Perform an analysis of “data scientist” jobs listed on job boards and on the employment pages of major companies. What are the most common skills that employers look for? What are the most unique skills that employers look for? Where are the types of companies that employ the most data scientists?
+
+## Plan
+### Step 1 collecting raw data (week 2-3)
+#### Many job-hunting websites such as Glassdoor, Linkedin provide a good and efficient job classification system. Hence we first collect as many as "data scientist" jobs from such websites. Then using the link in the description of each job, we can get access to the detailed requirement of skills. For simplicity, we download the whole page or the whole description of job as the raw data. 
+
+### Step 2 data cleaning (week 4-5)
+#### In this section we are going to identify skills from the raw data. The goal is to get a table with company as the row name, a variety of skills as the column name and a binary value in each cell representing whether this skills is desired by this company. 
+#### Currently My thought of doing this is to get a dictionary of skills from some official website (or from a collection of websites) then match the skills in both data and the dictionary. Or we can use some statistical methods to extract words with connections to skills.
+#### Also, information about location of the company, salary, types and etc are also summarised.
+
+### Step 3 data analysis (week 6-7)
+#### With cleaned data set, we could answer the questions above. Since answering those questions may not involve complicated statistical models, I plan to make some fancy plots for intuitive demonstration.
+
