@@ -139,7 +139,7 @@ dictionary <- dictionary[!(dictionary$skill %in% stop_words), ]
 print(dictionary, n = 100)
 ```
 
-In this output, we get the dictionary we desire. With this, we can search each job description to identify those skills buried in sentences.
+In this output, we get the dictionary we desire, containing only 40 skills. With this, we can search each job description to identify those skills buried in sentences.
 
 ***
 

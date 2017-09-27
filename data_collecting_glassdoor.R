@@ -14,14 +14,16 @@ library(stringr)
 company <- rep(NA, 10000)
 location <- rep(NA, 10000)
 description <- rep(NA, 10000)
+companysize <- rep(NA, 10000)
+industry <- rep(NA, 10000)
 currentpage <- html_session("https://www.glassdoor.com/Job/jobs.htm?suggestCount=0&suggestChosen=true&clickSource=searchBtn&typedKeyword=data+sc&sc.keyword=data+scientist&locT=&locId=&jobType=")
 count <- 0 # count the number of jobs
-
+ptm <- proc.time()
 # scaping. 'i' is the index of page. 
 # Currently use page 1 to 5 with each containing roughly 30 jobs.
 for(i in 1:5){
   link <- currentpage %>% html_nodes("a.jobLink") %>% html_attr("href")
-  link <- paste('www.glassdoor.com', link, sep = '')
+  link <- paste('https://www.glassdoor.com', link, sep = '')
   link <- unique(link)
   for(j in link){
     subpage <- html_session(j) # jump to the second level webpage
@@ -36,6 +38,18 @@ for(i in 1:5){
         description[count] <- subpage %>% html_node(".desc") %>% html_text()
       }
     }
+    sourcefile <- suppressWarnings(readLines(j))
+    pinpoint <- grep("employer", sourcefile)
+    
+    sourcefile <- sourcefile[pinpoint[1]+ 0:20]
+    current_industry <- sourcefile[str_detect(sourcefile, "\'industry\'")] %>%
+      str_extract("\"(.*)\"") %>% 
+      str_sub(2, -2)
+    industry[count] <- if(length(current_industry)>0){current_industry}else{NA}
+    current_size <- sourcefile[str_detect(sourcefile, "\'size\'")] %>%
+      str_extract("\"(.*)\"") %>% 
+      str_sub(2, -2)
+    companysize[count] <- if(length(current_size)>0){current_size}else{NA}
   }
   # navigate to next page
   nextpage <- currentpage %>% html_nodes("#FooterPageNav a") %>% html_attr("href")
@@ -44,7 +58,7 @@ for(i in 1:5){
   
   Sys.sleep(5)
 }
-
+proc.time() - ptm
 # preprocessing location data for output
 location <- location[1:count] %>%
   sapply(function(s) substr(s, 5, nchar(s))) %>%
@@ -63,6 +77,9 @@ location <- t(as.data.frame(location))
 demo_raw_data <- data.frame(company = trimws(company[1:count]), 
                             city = location[,1], 
                             state = location[,2], 
-                            description = description[1:count])
+                            description = description[1:count],
+                            companysize = companysize[1:count],
+                            industy = str_replace_all(industry[1:count], "&amp;", "&"))
 rownames(demo_raw_data) <- NULL
+
 write.csv(demo_raw_data, "demo_raw_data.csv")
