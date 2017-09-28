@@ -13,10 +13,10 @@ knitr::opts_chunk$set(echo = TRUE)
 ## The question is:
 Perform an analysis of "data scientist" jobs listed on job boards and on the employment pages of major companies. What are the most common skills that employers look for? What are the most unique skills that employers look for? Where are the types of companies that employ the most data scientists?
 ```{r library, message= FALSE, warning= FALSE}
-library(rvest)
-library(dplyr)
-library(stringr)
-library(tidytext)
+library(rvest) # web scraping
+library(dplyr) # data cleaning
+library(stringr); library(tidytext) # text processing
+library(ggplot2);library(ggmap);library(wordcloud) # data visualization
 ```
 
 ### Step 1 Scraping data from Glassdoor.com with job title 'data scientist'
@@ -30,14 +30,16 @@ For testing, we only scrape five pages of jobs in the website. And the following
 company <- rep(NA, 10000)
 location <- rep(NA, 10000)
 description <- rep(NA, 10000)
+companysize <- rep(NA, 10000)
+industry <- rep(NA, 10000)
 currentpage <- html_session("https://www.glassdoor.com/Job/jobs.htm?suggestCount=0&suggestChosen=true&clickSource=searchBtn&typedKeyword=data+sc&sc.keyword=data+scientist&locT=&locId=&jobType=")
 count <- 0 # count the number of jobs
-
-# scraping. 'i' is the index of page. 
+ptm <- proc.time()
+# scaping. 'i' is the index of page. 
 # Currently use page 1 to 5 with each containing roughly 30 jobs.
 for(i in 1:5){
   link <- currentpage %>% html_nodes("a.jobLink") %>% html_attr("href")
-  link <- paste('www.glassdoor.com', link, sep = '')
+  link <- paste('https://www.glassdoor.com', link, sep = '')
   link <- unique(link)
   for(j in link){
     subpage <- html_session(j) # jump to the second level webpage
@@ -52,6 +54,18 @@ for(i in 1:5){
         description[count] <- subpage %>% html_node(".desc") %>% html_text()
       }
     }
+    sourcefile <- suppressWarnings(readLines(j))
+    pinpoint <- grep("employer", sourcefile)
+    
+    sourcefile <- sourcefile[pinpoint[1]+ 0:20]
+    current_industry <- sourcefile[str_detect(sourcefile, "\'industry\'")] %>%
+      str_extract("\"(.*)\"") %>% 
+      str_sub(2, -2)
+    industry[count] <- if(length(current_industry)>0){current_industry}else{NA}
+    current_size <- sourcefile[str_detect(sourcefile, "\'size\'")] %>%
+      str_extract("\"(.*)\"") %>% 
+      str_sub(2, -2)
+    companysize[count] <- if(length(current_size)>0){current_size}else{NA}
   }
   # navigate to next page
   nextpage <- currentpage %>% html_nodes("#FooterPageNav a") %>% html_attr("href")
@@ -60,7 +74,7 @@ for(i in 1:5){
   
   Sys.sleep(5)
 }
-
+proc.time() - ptm
 # preprocessing location data for output
 location <- location[1:count] %>%
   sapply(function(s) substr(s, 5, nchar(s))) %>%
@@ -79,14 +93,17 @@ location <- t(as.data.frame(location))
 demo_raw_data <- data.frame(company = trimws(company[1:count]), 
                             city = location[,1], 
                             state = location[,2], 
-                            description = description[1:count])
+                            description = description[1:count],
+                            companysize = companysize[1:count],
+                            industy = str_replace_all(industry[1:count], "&amp;", "&"))
 rownames(demo_raw_data) <- NULL
+
 write.csv(demo_raw_data, "demo_raw_data.csv")
 ```
 
 The raw data looks like:
 
-```{r echo = FALSE}
+```{r show demo_data, echo = FALSE}
 demo_raw_data <- read.csv("demo_raw_data.csv")
 data_for_display <- head(demo_raw_data)
 data_for_display$description <- data_for_display$description %>%
@@ -97,7 +114,7 @@ print(data_for_display)
 
 ***
 
-### Step 2 Biuld 'skill dictionary' from raw data
+### Step 2 Auto-recognization of 'skill' from job description
 
 For identifying the skills employer looks for, we hope to build a dictionary of all relevant skills and use this dictionary to check whether each job requries any of these skills.
 
@@ -115,15 +132,15 @@ Obviously, this method can only extract some, but not all, skills from one job d
 Notice that this method improves as the data size increases. As we include more data, skills can be better seperated from noise words and more skills will be included and identified.
 
 ```{r dictionary}
+demo_raw_data$description <- tolower(demo_raw_data$description) #description to lower case
 seg <- str_split(demo_raw_data$description, ",|:|[.] | and") %>% unlist() %>% trimws()
 seg_word_count <- seg %>% sapply(str_count,"\\S+") %>% as.vector()
 seg <- seg[seg_word_count < 3 & seg_word_count != 0] %>% tolower()
 dictionary <- data.frame(skill = seg, stringsAsFactors = F) %>%
   group_by(skill) %>%
   tally() %>%
-  filter(n > 5) %>%
+  filter(n > 6) %>%
   arrange(desc(n))
-print(dictionary)
 ```
 
 In the above output, we can still find some noise words, such as "color" and "religion". Since we have less that 100 words here, we can filter out those words manually. (It may be problematic under big data assumption.)
@@ -134,20 +151,81 @@ stop_words <- c("color", "religion", "national origin", "sexual orientation",
                 "design", "analytics", "marital status", "analysis", "gender",
                 "develop", "tools", "veteran status", "dental", "implement",
                 "complex", "pregnancy", "processes", "race", "ancestry", "build",
-                "ca", "data", "maintain", "technology")
+                "ca", "data", "maintain", "technology", "product managers","e.g","etc",
+                "experience")
 dictionary <- dictionary[!(dictionary$skill %in% stop_words), ]
-print(dictionary, n = 100)
+print(dictionary)
 ```
 
-In this output, we get the dictionary we desire, containing only 40 skills. With this, we can search each job description to identify those skills buried in sentences.
+In this output, we get the dictionary we desire, containing less than 40 skills. With this, we can search each job description to identify those skills buried in sentences.
 
 ***
 
 ### Step 3 Tidy data -- making a job-skill table
 In this step, we are going to construt a job-skill table, with each role representing a company, each column as a skill in the dictionary and each entry as a binary value showing whether the corresponding skill is required by the corresponding company.
-
-To be continued.....
+```{r tidy data, eval = FALSE}
+skill_company_mat <- matrix(NA, nrow = nrow(demo_raw_data), ncol = nrow(dictionary))
+colnames(skill_company_mat) <- dictionary$skill
+for(i in 1:ncol(skill_company_mat)){
+  skill_company_mat[,i] <- 
+    str_detect(demo_raw_data$description, pattern = dictionary$skill[i]) %>% as.numeric
+}
+demo_clean_data <- cbind(demo_raw_data[,-c(1,5)], skill_company_mat)
+write.csv(demo_clean_data, "demo_clean_data.csv")  
+```
 
 ***
 
-### Step 4 Result and Visualization
+### Step 4 Exploratory analysis and Visualization
+The word cloud of skills estimated from job description:
+```{r skill word cloud, echo= FALSE}
+demo_clean_data <- read.csv("demo_clean_data.csv", stringsAsFactors = F)
+# word cloud plot for skills
+set.seed(3456)
+wordcloud(words = colnames(demo_clean_data)[-(1:6)], 
+          freq = colSums(demo_clean_data[,-(1:6)]),
+          min.freq = 20,max.words=200,
+          random.order=FALSE, rot.per=0.35, 
+          colors=brewer.pal(8, "Dark2"))
+```
+
+Bar plot of types of companies that hire data scientist:
+```{r company type bar plot, echo=FALSE, message=FALSE}
+industry_distr <- data.frame(industry = 
+                               demo_clean_data$industy[!is.na(demo_raw_data$industy)], 
+                             stringsAsFactors = F)
+filtration  <- industry_distr %>%
+  group_by(industry) %>%
+  tally %>%
+  filter(n > 2) %>%
+  arrange(desc(n))
+industry_distr <- right_join(industry_distr, filtration)
+ggplot(industry_distr, aes(x = industry, fill = n)) +
+  labs(x = NULL) +
+  geom_bar() +
+  coord_flip() +
+  theme(text = element_text(size = 18), legend.position="none")
+```
+
+Point plot of geography distribution of companies that hire data scientist:
+```{r geoplot for company location, echo=FALSE, message= FALSE}
+location <- str_c(demo_clean_data$city, demo_clean_data$state, sep = ", ")
+location <- data.frame(loc = location[!is.na(location)], stringsAsFactors =  F) %>%
+  group_by(loc) %>%
+  tally() %>%
+  arrange(desc(n)) %>%
+  as.data.frame() %>%
+  mutate(longi = NA, latti = NA)
+for(i in 1:nrow(location)){
+  location[i, 3:4] <- geocode(location[i,1]) %>% as.numeric
+}
+usa_center <- as.numeric(geocode("United States"))
+USAMap <- ggmap(get_googlemap(center=usa_center, zoom=4, maptype = "roadmap"), 
+                extent="normal")
+USAMap + geom_point(aes(x = longi, y = latti), data = location, 
+                    alpha = 0.6, col = "orange",
+                    size = location$n*pi) + 
+  geom_point(aes(x = longi, y = latti), data = location, 
+             alpha = 0.3, col = "blue", size = 1) +
+  scale_size_continuous(range = range(location$n))
+```

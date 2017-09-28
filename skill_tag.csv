@@ -1,40 +1,33 @@
 "","skill","n"
-"1","statistics",46
-"2","python",41
-"3","computer science",31
-"4","machine learning",31
-"5","r",28
-"6","engineering",23
-"7","mathematics",21
-"8","data mining",19
-"9","operations research",16
-"10","java",15
-"11","spark",14
-"12","economics",13
-"13","modeling",13
-"14","hadoop",12
-"15","applied mathematics",11
-"16","hive",11
-"17","matlab",11
-"18","sas",11
-"19","sql",11
-"20","algorithms",10
-"21","clustering",10
-"22","data science",10
-"23","marketing",10
-"24","physics",10
-"25","genetic information",9
-"26","predictive modeling",9
-"27","scala",9
-"28","data visualization",8
+"1","statistics",49
+"2","python",37
+"3","machine learning",35
+"4","engineering",31
+"5","computer science",29
+"6","r",28
+"7","mathematics",22
+"8","economics",19
+"9","sql",16
+"10","data mining",15
+"11","java",15
+"12","operations research",14
+"13","physics",14
+"14","hive",13
+"15","sas",12
+"16","applied mathematics",10
+"17","clustering",10
+"18","econometrics",10
+"19","hadoop",10
+"20","math",10
+"21","genetic information",9
+"22","spark",9
+"23","algorithms",8
+"24","data science",8
+"25","deep learning",8
+"26","development",8
+"27","marketing",8
+"28","matlab",8
 "29","statistical analysis",8
-"30","visualization",8
-"31","c++",7
-"32","mapreduce",7
-"33","math",7
-"34","spss",7
-"35","classification",6
-"36","econometrics",6
-"37","optimization",6
-"38","ruby",6
-"39","scipy",6
+"30","statistical modeling",8
+"31","modeling",7
+"32","predictive modeling",7
