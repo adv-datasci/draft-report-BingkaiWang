@@ -1,117 +1,151 @@
-"","company","city","state","companysize","industy","statistics","python","machine learning","engineering","computer science","r","mathematics","economics","sql","data mining","java","operations research","physics","hive","sas","applied mathematics","clustering","econometrics","hadoop","math","genetic information","spark","algorithms","data science","deep learning","development","marketing","matlab","statistical analysis","statistical modeling","modeling","predictive modeling"
-"1","ID Analytics","San Diego","CA","51-200","IT Services",1,1,1,1,1,1,0,0,0,0,1,0,0,0,0,0,0,0,1,1,0,0,1,0,0,1,0,0,0,1,1,0
-"2","HUB International","Chicago","IL","10000+","Insurance Agencies & Brokerages",1,1,0,0,0,1,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0
-"3","Raise Marketplace Inc.","New York","NY","201-500","Other Retail Stores",1,1,0,0,0,1,1,0,1,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,1,0
-"4","GCP Applied Technologies","Cambridge","MA","1001-5000","Chemical Manufacturing",0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0
-"5","America First Credit Union","Ogden","UT","1001-5000","Investment Banking & Asset Management",1,1,1,0,1,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,1,0,1,0
-"6","Novetta","Herndon","VA","501-1000","Enterprise Software & Network Solutions",0,1,1,1,1,1,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,1,1,0,1,0,0,1,0,0,0
-"7","Shutterfly","Redwood City","CA","1001-5000","Internet",0,1,0,0,0,1,0,0,1,1,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,1,0,1,0,0,0
-"8","Progrexion Marketing",NA,NA,"1001-5000","Advertising & Marketing",1,1,1,0,1,1,1,0,1,0,0,0,0,0,0,0,1,0,0,1,0,0,1,1,0,0,0,0,0,0,0,0
-"9","Whitney, Bradley and Brown","Reston","VA","501-1000","Consulting",1,1,1,1,1,1,1,1,1,1,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,1,0,0,1,0,1,0
-"10","Quicken Loans","Detroit","MI","10000+","Lending",1,1,1,1,1,1,1,1,1,0,1,1,1,0,1,1,0,0,1,1,0,0,0,0,0,1,0,0,0,0,1,0
-"11","Amazon","Seattle","WA","10000+",NA,1,1,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,0
-"12","Stitch Fix","San Francisco","CA","5001-10000","Department, Clothing, & Shoe Stores",1,1,1,0,0,1,1,0,1,0,0,0,1,0,0,0,0,0,0,1,0,0,1,1,0,0,0,0,0,0,0,0
-"13","Walmart eCommerce","San Bruno","CA","1001-5000","Internet",0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,1,0,1,1,0,0,0
-"14","Publishers Clearing House","Jericho","NY","501-1000","Advertising & Marketing",1,0,1,0,1,1,0,1,1,1,0,0,0,0,1,0,0,1,1,1,0,0,1,0,0,0,0,0,0,0,1,1
-"15","Cylance Inc.","Portland","OR","501-1000","Enterprise Software & Network Solutions",1,1,1,1,1,1,1,0,0,0,1,0,1,0,0,0,0,0,0,1,0,0,1,0,0,1,0,1,0,0,0,0
-"16","adMarketplace","New York","NY","51-200","Advertising & Marketing",1,1,1,1,1,1,1,0,1,1,1,0,0,0,0,0,0,0,0,1,0,1,1,1,1,0,0,0,0,0,0,0
-"17","SeatGeek","New York","NY","51-200","Internet",1,1,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,1,0,1,0,1,1,0,0,0,0,0
-"18","Salesforce",NA,NA,"10000+","Computer Hardware & Software",0,1,1,0,0,1,0,0,1,0,1,0,0,0,0,0,0,0,0,1,0,1,0,1,1,0,1,0,0,0,1,0
-"19","Classy","San Diego","CA","201-500","Computer Hardware & Software",0,1,1,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
-"20","Pivotal Software","New York","NY","1001-5000","Computer Hardware & Software",1,1,1,1,1,1,1,0,1,0,1,1,1,1,1,1,0,0,0,1,0,0,0,0,0,1,0,1,1,0,1,1
-"21","RealSelf","Seattle","WA","51-200","Internet",1,0,0,1,0,1,0,1,1,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0
-"22","The Washington Post","Washington","DC","1001-5000","Publishing",1,1,1,0,1,1,1,0,0,1,1,0,0,1,1,0,0,0,1,1,0,1,1,1,0,0,0,0,0,1,1,1
-"23","Sitecore","Sausalito","CA","501-1000","Computer Hardware & Software",1,0,1,1,1,1,0,1,0,1,0,0,0,0,0,0,0,0,0,1,0,0,1,1,0,1,1,0,0,0,1,0
-"24","Stonebridge","Tulsa","OK","51-200","IT Services",1,1,1,1,1,1,1,0,0,0,0,1,0,0,0,1,0,0,1,1,0,1,0,1,0,1,0,0,0,1,1,0
-"25","Vistar Media","New York","NY","1-50","Enterprise Software & Network Solutions",1,1,1,1,1,1,0,0,1,0,0,0,1,0,0,0,0,0,1,1,0,1,0,0,0,0,0,0,0,1,1,0
-"26","Evolve Vacation Rental Network","Denver","CO","51-200","Travel Agencies",1,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
-"27","Nytec","San Francisco","CA","201-500","Computer Hardware & Software",1,0,0,1,0,1,0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0
-"28","The Hanover Insurance Company","Worcester","MA","5001-10000","Insurance Carriers",1,0,1,0,1,1,1,0,1,1,0,0,0,0,0,1,0,0,0,1,1,0,0,1,0,1,0,0,0,0,1,1
-"29","Grammarly","San Francisco","CA","51-200","Consumer Product Rental",1,1,0,1,0,1,0,0,1,1,0,0,1,0,0,0,0,0,0,1,0,0,0,1,0,0,1,0,0,0,0,0
-"30","Affirm","San Francisco","CA","201-500","Lending",0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-"31","Kimberly-Clark","Neenah","WI","10000+","Consumer Products Manufacturing",1,1,1,1,1,1,0,0,1,1,1,1,0,1,0,0,0,0,1,1,1,1,1,1,0,1,1,1,1,0,1,0
-"32","Priceline.com","Norwalk","CT","10000+","Internet",1,0,1,1,0,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,1,0
-"33","Spectrum","Arapahoe","CO","10000+","Cable, Internet & Telephone Providers",1,0,0,0,1,1,0,1,1,0,0,0,1,1,0,0,0,0,1,1,0,1,1,0,0,0,0,0,0,1,1,0
-"34","Hulu","Santa Monica","CA","1001-5000","TV Broadcast & Cable Networks",1,1,1,0,1,1,1,0,0,1,0,1,1,0,1,0,0,1,0,1,0,0,0,1,0,1,0,0,0,0,0,0
-"35","Rocket Lawyer","San Francisco","CA","201-500","Computer Hardware & Software",1,1,1,1,1,1,1,1,1,0,0,1,1,1,0,0,0,0,1,1,0,0,1,0,0,1,1,0,0,0,1,0
-"36","Dealer Tire","Cleveland","OH","501-1000","Wholesale",1,1,1,0,1,1,1,0,1,0,0,0,0,0,0,1,1,0,0,1,0,0,0,1,0,1,0,0,0,0,1,0
-"37","Conviva","Foster City","CA","51-200","IT Services",1,1,1,1,0,1,0,0,1,1,1,0,0,1,0,0,0,0,1,1,0,0,0,0,1,1,0,0,0,0,0,0
-"38","L.A. Care Health Plan","Los Angeles","CA","1001-5000","Health Care Services & Hospitals",1,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,1,0,1,1
-"39","WellCare","Tampa","FL","5001-10000","Insurance Carriers",0,1,1,0,0,1,0,0,1,1,1,0,0,0,1,0,1,0,0,0,0,1,1,1,1,0,1,0,1,0,0,0
-"40","Ultimate Software",NA,NA,"1001-5000","Enterprise Software & Network Solutions",1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,1,1,0
-"41","PROS","Houston","TX","1001-5000","Computer Hardware & Software",1,1,1,0,0,1,1,0,0,0,1,0,0,0,0,1,0,1,0,1,0,0,1,1,0,1,1,1,0,0,0,0
-"42","Pure Storage","Mountain View","CA","1001-5000","Computer Hardware & Software",1,1,1,0,1,1,1,0,1,1,0,0,0,1,0,0,0,0,1,1,0,1,0,1,0,0,0,0,0,0,0,0
-"43","Thermo Fisher Scientific","Carlsbad","CA","10000+","Biotech & Pharmaceuticals",1,1,1,1,1,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,1,0,0,1,1,0
-"44","Domo","Salt Lake City","UT","501-1000","Computer Hardware & Software",1,1,1,0,1,1,0,0,1,1,1,0,0,1,1,0,0,0,1,1,0,1,1,1,0,0,0,1,1,0,1,1
-"45","Quotient Technology Inc.","Cincinnati","OH","501-1000","Advertising & Marketing",1,1,0,1,1,1,1,0,1,1,1,0,0,0,1,1,0,0,0,1,0,0,1,1,0,1,1,0,1,0,1,0
-"46","SHYFT Analytics","Boston","MA","51-200","IT Services",0,1,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0
-"47","Quora, Inc.","Mountain View","CA","51-200","Internet",0,1,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0
-"48","Fabergent USA","Harrisburg","PA","51-200","IT Services",0,0,1,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-"49","Proofpoint","Draper","UT","1001-5000","Enterprise Software & Network Solutions",1,1,1,1,1,1,0,0,1,0,0,0,1,1,0,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0
-"50","Lorven Technologies","Philadelphia","PA","1-50","Accounting",0,0,1,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-"51","Coursera","Mountain View","CA","201-500","Colleges & Universities",1,1,1,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,1,0,0,0,0,1,0
-"52","Uptake","Chicago","IL","501-1000","Computer Hardware & Software",1,1,1,0,1,1,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,0,0,0,0
-"53","JetSmarter","Fort Lauderdale","FL","201-500","Airlines",0,0,1,1,1,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,1,1
-"54","DuPont","Johnston","IA","10000+","Chemical Manufacturing",1,1,1,1,1,1,0,0,1,0,1,0,1,0,0,0,0,0,0,1,0,0,1,1,1,0,0,1,0,0,0,0
-"55","Eventbrite","San Francisco","CA","501-1000","Internet",0,1,0,0,0,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0
-"56","Aegon","Denver","CO","10000+","Insurance Carriers",1,1,1,1,1,1,1,0,1,1,1,0,1,1,1,1,0,1,1,1,1,0,1,0,0,1,0,0,0,0,0,0
-"57","Fractal Analytics","Cincinnati","OH","1001-5000","Consulting",1,1,1,1,1,1,0,0,1,0,1,0,0,0,1,0,0,0,1,0,0,1,1,0,1,1,0,0,1,0,1,0
-"58","WOW","Englewood","CO","1001-5000","Cable, Internet & Telephone Providers",1,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,1,0,1,0,1,0
-"59","IBM","San Jose","CA","10000+",NA,1,0,1,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,0,0,0,0,0,0
-"60","LearnVest","New York","NY","201-500","Internet",1,1,1,0,1,1,1,0,0,0,1,1,0,1,1,0,0,1,0,1,0,1,1,1,0,1,0,0,1,0,0,0
-"61","Tuft & Needle","Mesa","AZ","51-200","Home Furniture & Housewares Stores",1,1,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0,1,1,1
-"62","Epiworks","Champaign","IL","51-200","Electrical & Electronic Manufacturing",1,0,0,1,1,1,1,0,1,0,0,0,0,0,1,1,0,1,0,1,0,0,0,0,0,1,0,0,0,0,1,0
-"63","KPMG","Dallas","TX","10000+","Accounting",1,1,1,1,1,1,1,0,0,1,1,1,0,0,1,0,1,1,1,1,1,1,1,0,0,1,1,1,0,0,1,0
-"64","Cummins Power South","Columbus","IN","10000+","Transportation Equipment Manufacturing",0,1,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0
-"65","PwC","Swansea","MA","10000+","Accounting",1,1,1,0,1,1,1,0,1,0,0,0,0,1,0,0,0,0,1,1,0,1,1,1,0,1,0,0,0,0,0,0
-"66","Digital Reasoning","Franklin","TN","51-200","Computer Hardware & Software",1,1,1,1,1,1,0,0,0,1,1,0,0,0,0,0,0,0,1,1,0,1,1,0,1,1,0,0,0,0,1,0
-"67","Reinsurance Group of America","Chesterfield","MO","1001-5000","Insurance Carriers",1,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,1,0,1,1
-"68","Backcountry","Park City","UT","501-1000","Department, Clothing, & Shoe Stores",1,1,1,0,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,1,0,0,1,1,0,1,1,0,0,0,0,0
-"69","Cardinal Solutions","Cincinnati","OH","201-500","IT Services",1,1,1,0,0,1,1,0,1,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,1,0,0,1,0,1,0
-"70","MITRE","Tampa","FL","5001-10000","Research & Development",0,1,1,1,1,1,0,0,1,0,1,0,0,0,0,0,0,0,1,0,0,0,0,1,0,1,0,0,0,1,1,0
-"71","EcoSense Lighting","Los Angeles","CA","51-200","Electrical & Electronic Manufacturing",0,1,0,1,1,1,1,1,0,1,0,0,1,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0
-"72","Monsanto Company","Saint Louis","MO","10000+","Food Production",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
-"73","Ibotta","Denver","CO","201-500","Computer Hardware & Software",0,1,1,1,0,1,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1,1,1,0,0,1,0,0,1,1,0
-"74","RELX Group","Raleigh","NC","10000+","Publishing",0,1,0,1,0,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
-"75","Brine Group Staffing Solutions","Walpole","MA","1-50","Staffing & Outsourcing",0,1,1,1,1,1,0,0,0,1,0,0,1,0,0,0,0,0,0,1,0,0,1,0,0,1,0,0,0,0,0,0
-"76","Brainjolt",NA,NA,"1-50","Publishing",1,1,1,1,1,1,1,1,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0
-"77","ReqRoute,Inc","Dallas","TX","1-50","Staffing & Outsourcing",1,1,1,0,1,1,0,0,0,0,1,0,0,0,0,0,0,0,1,1,0,1,1,0,1,0,0,0,0,0,1,0
-"78","Simpli FI","Fort Worth","TX","51-200","Advertising & Marketing",0,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,1,1,0,0,1,1,0,0,0,0,0,1,1,0
-"79","Supercell","San Francisco","CA","51-200","Video Games",0,1,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,1,0,0,0,0,0
-"80","Wheelhouse (California)","San Francisco","CA","1-50","Hotels, Motels, & Resorts",1,0,1,1,0,1,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0
-"81","Qventus","Mountain View","CA","1-50","Enterprise Software & Network Solutions",0,1,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0
-"82","Munich RE","Arapahoe","CO","5001-10000","Insurance Carriers",1,1,1,1,0,1,1,0,0,0,0,0,0,0,1,1,0,0,0,1,0,0,0,0,1,1,0,0,0,0,0,0
-"83","Booz Allen Hamilton","Tampa","FL","10000+","Consulting",1,1,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,1,0,0,0,0,0,0
-"84","Workday","Pleasanton","CA","5001-10000","Computer Hardware & Software",1,1,1,1,0,1,1,0,0,1,1,0,0,1,1,0,0,1,1,1,1,0,1,1,0,0,0,0,0,0,1,0
-"85","Franklin Templeton Investments",NA,NA,"5001-10000","Investment Banking & Asset Management",1,1,1,1,1,1,1,0,1,1,0,0,0,0,1,0,0,1,0,1,0,0,1,1,0,1,0,0,0,1,1,0
-"86","Showtime Networks","New York","NY","501-1000","TV Broadcast & Cable Networks",1,1,1,0,1,1,1,0,1,1,1,1,1,1,1,1,1,0,1,1,0,1,0,1,0,1,1,1,1,0,1,1
-"87","Ford Motor Company","Dearborn","MI","10000+","Transportation Equipment Manufacturing",0,1,1,1,1,1,0,0,0,0,1,1,0,1,0,0,0,0,1,0,0,0,1,0,0,1,0,0,0,0,1,0
-"88","Galvanize","Austin","TX","201-500","Education Training Services",1,1,1,1,0,1,1,0,1,0,0,0,0,1,0,0,1,0,1,1,0,0,0,1,1,1,1,0,0,1,1,0
-"89","The Morning Consult, LLC","Washington","DC","1-50","Research & Development",1,1,1,1,1,1,0,1,0,0,0,0,1,0,0,0,0,1,0,1,0,0,0,1,0,0,0,0,0,0,0,0
-"90","Microsoft","Redmond","WA","10000+","Computer Hardware & Software",1,1,1,1,1,1,1,0,1,1,1,1,1,1,0,0,1,0,1,1,1,1,1,1,1,1,0,0,1,0,1,0
-"91","Accolade","Seattle","WA","501-1000","Health Care Services & Hospitals",1,1,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,1,1,0,1,1,1,0,1,0,0,1,0,0,0
-"92","Deloitte","Dayton","OH","10000+",NA,1,1,0,1,1,1,1,0,1,0,0,0,0,0,1,0,0,0,1,1,0,0,0,0,0,1,0,1,0,0,1,0
-"93","Becton Dickinson and Company","San Diego","CA","10000+","Health Care Products Manufacturing",0,1,1,0,0,1,0,0,1,1,0,0,0,0,0,0,0,0,1,1,0,0,1,1,0,1,0,0,0,0,1,0
-"94","Engie","Charlotte","NC","10000+","Energy",0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,1,0,1,0,1,0,0,0,0,0,0
-"95","Automated Insights","Durham","NC","51-200","Computer Hardware & Software",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,1,0,0,1,0,0,0
-"96","The Hartford","Charlotte","NC","10000+","Insurance Carriers",1,1,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,1,1
-"97","UTC Aerospace Systems","Charlotte","NC","10000+","Aerospace & Defense",0,0,1,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0
-"98","Willis Towers Watson","Philadelphia","PA","10000+","Consulting",0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-"99","NBA","New York","NY","1001-5000","Sports & Recreation",1,1,0,1,0,1,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,1,0,1,1,1,0
-"100","Credit Karma","San Francisco","CA","501-1000","Financial Analytics & Research",1,1,1,1,0,1,0,0,1,0,1,0,0,1,0,0,0,0,1,0,0,1,0,1,0,0,1,0,0,0,1,0
-"101","IntraEdge","New York","NY","501-1000","IT Services",1,0,1,1,1,1,1,1,0,0,0,0,1,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,1,1
-"102","TrueMotion","Boston","MA","1-50","Computer Hardware & Software",1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,0,1,1,0,0,0,0,1,0
-"103","Smule","San Francisco","CA","51-200","Internet",1,1,1,1,0,1,0,0,1,0,0,0,0,1,0,0,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0
-"104","JPS Health Network","Fort Worth","TX","5001-10000","Health Care Services & Hospitals",1,0,0,0,0,1,1,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,1,0,0,0,0,1,0,0,0
-"105","Impaq International","Columbia","MD","201-500","Consulting",1,1,1,0,0,1,1,1,1,0,0,0,0,0,1,0,0,0,0,1,0,0,1,0,0,1,0,0,1,1,1,1
-"106","Remind","San Francisco","CA","51-200","Computer Hardware & Software",1,1,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
-"107","Adobe","San Jose","CA","10000+","Computer Hardware & Software",0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0
-"108","Bank of America","Charlotte","NC","10000+","Banks & Credit Unions",1,1,1,0,0,1,0,1,1,0,0,0,0,0,1,0,0,0,1,1,0,0,0,1,1,1,1,0,1,0,1,0
-"109","Exxon Mobil","Houston","TX","10000+","Oil & Gas Exploration & Production",1,1,1,1,1,1,1,0,0,0,0,1,0,0,0,0,1,0,0,1,0,0,0,1,0,1,0,0,1,0,1,0
-"110","Walmart","Plano","TX","10000+",NA,1,0,0,1,1,1,1,1,1,1,0,0,0,0,1,0,0,0,0,1,0,0,0,1,1,1,0,0,1,0,0,0
-"111","Barclays","New York","NY","10000+",NA,1,1,1,0,0,1,0,0,0,1,0,1,1,0,1,0,0,0,1,0,1,0,0,1,0,1,0,1,1,0,0,0
-"112","Intel Corporation","Phoenix","AZ","10000+","Computer Hardware & Software",1,0,1,1,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,1,0,0,0,0,1,1
-"113","CSI Tech","Tampa","FL","1-50",NA,1,1,1,1,0,1,1,0,1,0,0,0,0,0,1,1,1,0,0,1,0,1,1,1,1,0,0,0,1,0,0,0
-"114","SparkCognition","Austin","TX","51-200","Enterprise Software & Network Solutions",0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0
-"115","Art.com","Emeryville","CA","501-1000","Home Furniture & Housewares Stores",1,1,1,0,1,1,1,0,1,1,1,1,0,0,0,0,0,1,1,1,0,1,1,1,0,0,1,0,0,1,1,1
-"116","LumenData","Silver Spring","MD","1-50",NA,1,1,1,1,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0
+"","company","rating","salary","city","state","companysize","industy","statistics","r","python","machine learning","engineering","computer science","economics","clustering","data mining","hadoop","java","math","matlab","physics","sas","hive","operations research","sql","classification","applied mathematics","marketing","spark"
+"1","PwC",3.8,"$83k-$129k","Tampa","FL","10000--1","Accounting",0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"2","Smith Hanley Associates",4.2,NA,"Bridgewater","NJ","1-50","Staffing & Outsourcing",0,1,1,1,0,0,0,1,0,1,0,0,0,0,1,1,0,0,1,0,0,0
+"3","L.A. Care Health Plan",3.3,"$78k-$117k","Los Angeles","CA","1001-5000","Health Care Services & Hospitals",1,1,0,0,1,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"4","Sprout Social",4.9,"$95k-$139k","Chicago","IL","201-500","Internet",1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0
+"5",NA,NA,NA,"Santa Monica","CA",NA,NA,0,1,1,1,0,0,0,0,0,0,0,1,0,1,0,0,0,0,1,0,1,0
+"6","Smith Hanley Associates",4.2,NA,"Moline","IL","1-50","Staffing & Outsourcing",0,1,1,1,0,1,0,0,0,1,0,1,0,0,1,0,0,1,0,0,1,1
+"7","CA Technologies",3.2,"$92k-$132k","San Diego","CA","10000--1","Computer Hardware & Software",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"8","USAA",3.7,"$70k-$107k","San Antonio","TX","10000--1","Insurance Carriers",1,1,0,1,1,1,1,0,0,0,1,1,0,0,0,0,0,0,0,1,0,0
+"9","GCP Applied Technologies",3.2,"$77k-$116k","Cambridge","MA","1001-5000","Chemical Manufacturing",0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0
+"10","GE Digital",3.2,"$121k-$168k","San Ramon","CA","1001-5000","Enterprise Software & Network Solutions",1,1,1,1,1,1,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0
+"11","Clarity Insights",3.6,"$101k-$143k",NA,NA,"201-500","IT Services",1,1,1,1,1,0,0,0,1,1,0,1,0,1,1,0,1,1,0,0,0,1
+"12","USAA",3.7,"$70k-$107k","San Antonio","TX","10000--1","Insurance Carriers",1,1,0,1,1,1,1,0,0,0,1,1,0,0,0,0,1,0,0,1,0,0
+"13",NA,NA,"$86k-$145k","ton","MA","1-50","Computer Hardware & Software",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"14","Smith Hanley Associates",4.2,NA,"New York","NY","1-50","Staffing & Outsourcing",1,1,1,1,0,1,0,1,0,1,0,1,0,0,1,0,0,1,0,0,0,0
+"15","Dell",3.7,"$75k-$108k","Austin","TX","10000--1","IT Services",0,1,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+"16","LexisNexis Legal & Professional",3.3,"$81k-$115k","Raleigh","NC","201-500","Consulting",0,1,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+"17","Smith Hanley Associates",4.2,NA,"Pittsburgh","PA","1-50","Staffing & Outsourcing",1,1,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,1,0,0,1,0
+"18","Senior Whole Health",3.3,"$96k-$148k","Cambridge","MA","201-500","Insurance Carriers",1,1,1,1,0,1,0,0,0,0,0,1,0,0,1,0,0,1,0,0,0,0
+"19","Crossfire Consulting",5,"$93k-$141k","Center Valley","PA","51-200","Consulting",0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"20","IMVU",2.9,"$128k-$176k","Redwood City","CA","51-200","Internet",1,1,1,1,1,1,0,0,1,1,0,1,0,1,0,1,0,0,0,0,1,1
+"21","Amazon",3.6,"$123k-$174k","Seattle","WA","10000--1",NA,1,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"22","Esri",3.7,"$111k-$155k","Redlands","CA","1001-5000","Computer Hardware & Software",1,1,0,1,1,1,0,0,1,0,0,0,1,0,0,1,1,0,0,0,0,1
+"23","GE Digital",3.2,"$121k-$168k","San Ramon","CA","1001-5000","Enterprise Software & Network Solutions",1,1,1,1,1,1,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0
+"24","Hulu",4.1,"$96k-$140k","Santa Monica","CA","1001-5000","TV Broadcast & Cable Networks",1,1,1,1,0,1,0,0,1,0,0,1,0,1,1,0,1,0,0,0,0,0
+"25","Stripe",4.1,"$141k-$196k","San Francisco","CA","501-1000","Internet",1,1,1,0,0,0,1,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0
+"26","Proofpoint",3.3,"$122k-$172k","Sunnyvale","CA","1001-5000","Enterprise Software & Network Solutions",1,1,1,1,0,1,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0
+"27",NA,3.3,"$83k-$121k"," Jose","CA","51-200","Sports & Recreation",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"28","iHerb",4,"$79k-$117k",NA,NA,"1001-5000","Drug & Health Stores",1,1,1,0,1,1,0,0,1,0,1,1,0,0,0,0,0,1,0,0,0,0
+"29","PROS",3.8,"$76k-$108k","Houston","TX","1001-5000","Computer Hardware & Software",1,1,1,1,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,1,1,0
+"30","23andMe, Inc.",4.7,"$94k-$143k","Mountain View","CA","201-500","Biotech & Pharmaceuticals",1,1,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+"31","Workday",3.8,"$130k-$181k","Pleasanton","CA","5001-10000","Computer Hardware & Software",1,1,1,1,1,0,0,0,1,0,1,1,0,0,1,0,0,0,0,0,0,0
+"32","Jo-Ann Stores",2.8,"$76k-$120k","Hudson","OH","10000--1","Toy & Hobby Stores",0,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+"33","Domo",4.3,"$72k-$105k","American Fork","UT","501-1000","Computer Hardware & Software",1,1,1,1,0,1,0,1,0,0,0,1,0,0,1,0,0,1,0,0,0,0
+"34","Cisco Systems",3.9,"$90k-$130k","San Jose","CA","10000--1","Computer Hardware & Software",1,1,1,1,0,0,0,1,0,0,1,1,0,0,0,0,0,1,1,1,0,0
+"35","Smith Hanley Associates",4.2,NA,"Chicago","IL","1-50","Staffing & Outsourcing",1,1,0,1,0,1,0,1,0,1,0,1,0,0,0,0,0,0,0,0,1,0
+"36","Bose",3.6,"$92k-$138k","Framingham","MA","10000--1","Consumer Products Manufacturing",1,1,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,1,1
+"37","Priceline.com",3.2,"$92k-$135k","Norwalk","CT","10000--1","Internet",1,1,0,1,1,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0
+"38","Dell",3.7,"$75k-$108k","Austin","TX","10000--1","IT Services",0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+"39","Dell",3.7,"$75k-$108k","Round Rock","TX","10000--1","IT Services",0,1,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"40",NA,3.6,"$67k-$104k","sa","OK","51-200","IT Services",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"41","Apple",4,"$135k-$190k","Santa Clara","CA","10000--1","Computer Hardware & Software",1,1,1,1,0,1,0,0,0,1,1,1,0,0,0,1,0,1,0,1,0,1
+"42","Quicken Loans",3.7,"$84k-$127k","Detroit","MI","10000--1","Lending",1,1,1,1,1,1,1,0,0,1,1,1,0,1,1,0,1,1,0,1,0,0
+"43","VanderHouwen",4.2,NA,"Beaverton","OR","201-500","Advertising & Marketing",1,1,1,1,1,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,1
+"44","Publishers Clearing House",3.2,"$96k-$146k","Jericho","NY","501-1000","Advertising & Marketing",1,1,0,1,0,1,1,0,1,1,0,1,0,0,1,0,0,0,0,0,0,0
+"45","Beyond Finance",4.5,"$85k-$129k","Boston","MA","51-200","Lending",1,1,1,1,1,1,0,1,1,0,0,1,1,0,1,0,1,1,0,0,1,0
+"46","Deloitte",3.8,"$120k-$179k","Arlington","VA","10000--1",NA,1,1,1,0,1,1,0,0,0,1,0,1,1,0,1,0,0,1,0,0,0,0
+"47","The Cadmus Group",3,"$94k-$140k","Washington","DC","501-1000","Consulting",0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"48","Progrexion Marketing",3.4,"$71k-$103k","Salt Lake City","UT","1001-5000","Advertising & Marketing",1,1,1,1,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0
+"49","Fooda",4.2,"$69k-$106k","Chicago","IL","1-50","IT Services",1,1,1,1,1,1,1,0,0,1,0,1,0,1,0,0,0,1,0,0,0,1
+"50","Health Catalyst",4.7,"$128k-$179k","Salt Lake City","UT","501-1000","Enterprise Software & Network Solutions",1,1,1,1,0,1,1,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0
+"51","National Grid USA",3.5,"$62k-$96k","Waltham","MA","10000--1","Utilities",1,1,1,1,1,1,1,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0
+"52","A Place for Mom",4.1,"$90k-$132k","Seattle","WA","201-500","Health Care Services & Hospitals",1,1,1,1,1,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0
+"53","Koch Industries",3.6,"$90k-$135k","Arlington","TX","10000--1","Oil & Gas Exploration & Production",1,1,1,1,1,1,0,0,1,1,0,1,0,0,1,1,0,1,0,0,0,0
+"54","Eventbrite",4.1,"$63k-$91k","Nashville","TN","501-1000","Internet",0,1,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0
+"55","Katerra",4.3,"$70k-$120k","Atlanta","GA","501-1000","Industrial Manufacturing",0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"56","Cratejoy",4.9,"$89k-$133k","Austin","TX","1-50","Internet",1,1,1,0,0,0,0,0,1,0,1,1,0,0,0,0,0,1,0,0,0,0
+"57","Planned Systems International",4.4,"$103k-$154k","Arlington","VA","201-500","Enterprise Software & Network Solutions",1,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+"58","Craftsy",3.8,"$81k-$119k","New York","NY","51-200","Education Training Services",1,1,1,1,0,1,1,1,0,1,1,1,0,0,1,1,1,1,1,0,1,1
+"59","Amazon",3.6,"$111k-$159k","Cambridge","MA","10000--1",NA,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"60","HUNTER Technical Resources",4.9,NA,"Plano","TX","51-200","Staffing & Outsourcing",1,1,1,1,0,0,0,0,1,0,0,0,0,0,0,1,0,1,0,0,0,0
+"61","PKW Associates, Inc",4,"$85k-$135k","Windsor Mill","MD","1-50",NA,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0
+"62","Central Intelligence Agency",3.7,"$91k-$136k","Washington","DC","10000--1","Federal Agencies",1,1,0,0,1,1,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0
+"63","Amazon",3.6,"$111k-$159k","Cambridge","MA","10000--1",NA,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"64","Schneider Electric",3.6,"$89k-$134k","Andover","MA","10000--1","Energy",1,1,1,1,1,1,0,0,0,0,0,1,1,0,0,0,1,0,0,0,0,0
+"65","HUNTER Technical Resources",4.9,NA,"Plano","TX","51-200","Staffing & Outsourcing",1,1,1,1,0,0,0,0,1,0,0,0,0,0,0,1,0,1,0,0,0,0
+"66","UNC Health Care",3.8,"$64k-$99k","Chapel Hill","NC","10000--1","Health Care Services & Hospitals",0,1,1,0,1,1,0,0,0,0,0,1,0,0,0,0,0,1,0,1,0,0
+"67","TextRecruit",4.9,"$101k-$154k","San Jose","CA","1-50","Enterprise Software & Network Solutions",1,1,0,0,1,1,0,0,1,0,1,1,0,0,1,0,0,0,0,0,0,0
+"68","Navstar",4.2,"$104k-$155k","Reston","VA","51-200","IT Services",1,1,1,1,1,1,0,1,1,0,1,1,0,0,0,0,0,0,1,0,0,0
+"69","Hollister Staffing",4,"$74k-$107k","Boston","MA","51-200","Staffing & Outsourcing",1,1,1,0,0,1,1,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0
+"70","Ford Motor Company",3.8,"$84k-$123k","Dearborn","MI","10000--1","Transportation Equipment Manufacturing",0,1,0,1,1,1,0,0,0,1,1,0,0,0,0,1,1,0,0,0,0,0
+"71","Amazon",3.6,"$123k-$174k","Seattle","WA","10000--1",NA,1,1,0,0,1,1,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0
+"72","Dataminr",4.6,"$93k-$139k","New York","NY","201-500","Enterprise Software & Network Solutions",1,1,1,1,1,1,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,1
+"73","Pluralsight",3.9,"$124k-$172k","Boston","MA","201-500","Education Training Services",1,1,1,1,0,1,0,0,0,0,0,1,0,0,0,1,0,1,0,0,0,1
+"74",NA,NA,NA,NA,NA,"1-50",NA,0,1,1,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0
+"75","Attune Insurance",5,"$83k-$133k","New York","NY","1-50","Insurance Agencies & Brokerages",0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+"76","National Renewable Energy Lab",3.3,"$70k-$106k","Golden","CO","1001-5000","Energy",0,1,1,1,1,0,0,0,0,0,1,0,1,1,0,0,0,1,0,0,0,1
+"77","Two Sigma",4.4,"$127k-$196k","New York","NY","1001-5000","Investment Banking & Asset Management",1,1,0,0,0,1,1,1,0,0,0,0,1,0,0,0,0,0,1,0,0,1
+"78","ServiceChannel",4.3,"$72k-$107k","New York","NY","51-200","Enterprise Software & Network Solutions",0,1,1,1,0,0,0,0,1,0,0,1,0,0,0,0,0,1,0,0,0,0
+"79","Expedia",3.9,"$122k-$171k","Bellevue","WA","10000--1","Internet",1,1,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+"80","Vettery",4.6,"$78k-$120k","New York","NY","51-200","Internet",1,1,1,1,1,1,0,0,0,0,0,1,0,0,0,0,1,1,0,0,0,0
+"81",NA,4.6,"$126k-$175k"," Francisco","CA","201-500","Computer Hardware & Software",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"82","Proofpoint",3.3,"$87k-$124k","Draper","UT","1001-5000","Enterprise Software & Network Solutions",1,1,0,1,1,1,0,1,0,0,0,0,0,1,0,1,0,1,0,0,0,0
+"83","Knowles",2.8,"$111k-$164k","Itasca","IL","10000--1","Electrical & Electronic Manufacturing",1,1,1,1,1,0,0,1,1,0,0,1,1,1,1,0,0,1,1,1,0,0
+"84","MultiCare Health System",3.5,"$64k-$100k","Mount Vernon","IA","10000--1","Health Care Services & Hospitals",1,1,0,0,0,1,0,1,1,0,0,1,0,0,0,0,0,1,1,0,0,0
+"85",NA,4.9,"$80k-$122k","tin","TX","51-200","Enterprise Software & Network Solutions",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"86","SeatGeek",4.8,"$99k-$150k","New York","NY","51-200","Internet",1,1,1,1,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,1,1
+"87","7Park Data",3.4,"$76k-$122k","New York","NY","1-50","Research & Development",0,1,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1
+"88","Hollister Staffing",4,"$74k-$107k","Boston","MA","51-200","Staffing & Outsourcing",0,1,1,1,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1
+"89","Newsela",3.8,"$122k-$184k","New York","NY","51-200","Internet",1,1,1,1,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,1,0
+"90","Walmart eCommerce",3.2,"$108k-$149k","Sunnyvale","CA","1001-5000","Internet",1,1,1,1,0,0,0,0,1,1,1,0,1,0,0,1,0,0,0,0,0,1
+"91","Oscar Insurance",3.7,"$120k-$176k","New York","NY","201-500","Insurance Agencies & Brokerages",0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0
+"92","Affirm",4.8,"$149k-$207k","San Francisco","CA","201-500","Lending",0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"93","Postmates",3.1,"$85k-$122k","Bellevue","WA","501-1000","Computer Hardware & Software",1,1,1,1,1,0,0,0,1,0,0,1,0,1,0,0,1,1,0,0,0,0
+"94",NA,NA,"$105k-$156k","Berkeley","CA","1-50",NA,1,1,0,1,1,1,0,0,0,1,0,1,0,1,0,1,0,0,0,0,0,1
+"95","Vitamin T",4.4,NA,"Chicago","IL","51-200","Advertising & Marketing",1,1,0,1,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,1,0
+"96","Domo",4.3,"$74k-$109k","Salt Lake City","UT","501-1000","Computer Hardware & Software",1,1,0,1,0,1,0,0,1,1,1,1,1,0,1,1,0,1,0,0,0,1
+"97","Remind",4.7,"$100k-$142k","San Francisco","CA","51-200","Computer Hardware & Software",1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0
+"98","Opendoor",4.7,"$138k-$193k","San Francisco","CA","201-500","Real Estate",0,1,1,1,1,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0,0,0
+"99","Coach",3.6,"$111k-$170k","New York","NY","10000--1","Other Retail Stores",0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0
+"100","Crescent Solutions",4.1,NA,"Las Vegas","NV","201-500","Staffing & Outsourcing",0,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"101","Walmart eCommerce",3.2,"$108k-$149k","Sunnyvale","CA","1001-5000","Internet",1,1,1,1,0,0,0,0,1,1,1,0,1,0,0,1,0,0,0,0,0,1
+"102",NA,5,"$69k-$111k",NA,NA,"1-50","Publishing",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"103","UPMC",3.3,"$53k-$83k","Pittsburgh","PA","10000--1","Health Care Services & Hospitals",1,1,0,1,0,0,1,0,0,0,0,1,1,0,1,0,1,0,1,1,0,0
+"104","Backcountry",3.2,"$67k-$97k","Park City","UT","501-1000","Department, Clothing, & Shoe Stores",1,1,1,1,0,1,1,0,1,0,0,1,0,0,0,0,0,1,0,0,1,0
+"105","Toptal",4.5,"$66k-$98k",NA,NA,"501-1000","Consulting",1,1,1,1,1,0,0,0,1,0,0,1,1,0,0,0,0,0,0,0,0,0
+"106","Vertical Knowledge",4,"$86k-$123k","Cleveland","OH","51-200","IT Services",0,1,0,0,0,1,0,1,0,0,0,0,1,0,0,0,0,0,1,0,0,1
+"107","PETCO",2.8,"$91k-$138k","San Diego","CA","10000--1","Pet & Pet Supplies Stores",1,1,1,1,0,1,0,1,1,0,0,1,0,0,1,1,0,1,0,0,1,0
+"108","Kforce",3.2,NA,"Framingham","MA","10000--1","Staffing & Outsourcing",1,1,1,1,0,1,0,0,1,1,1,1,0,1,0,0,1,0,0,1,0,1
+"109","Kforce",3.2,NA,"Atlanta","GA","10000--1","Staffing & Outsourcing",0,1,1,1,0,0,0,0,0,0,0,0,0,0,1,1,0,1,0,0,0,0
+"110","Thumbtack",4.5,"$105k-$147k","San Francisco","CA","201-500","Internet",1,1,1,1,1,1,0,1,0,1,0,0,0,0,0,1,0,0,1,0,0,1
+"111","Pure Storage",3.8,"$158k-$222k","Mountain View","CA","1001-5000","Computer Hardware & Software",1,1,1,1,0,1,0,0,1,0,0,1,0,0,0,0,0,1,0,0,0,1
+"112","Remind",4.7,"$100k-$142k","San Francisco","CA","51-200","Computer Hardware & Software",0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+"113","Novetta",3.6,"$109k-$161k","Herndon","VA","501-1000","Enterprise Software & Network Solutions",0,1,1,1,1,1,0,1,0,1,1,0,0,0,0,0,0,0,1,0,0,0
+"114","IntraEdge",3.9,"$77k-$118k","Phoenix","AZ","501-1000","IT Services",1,1,1,0,0,0,1,0,0,0,0,1,0,0,1,1,0,0,0,0,1,0
+"115","Axelon, Inc.",4,"$78k-$117k","Plano","TX","501-1000","Staffing & Outsourcing",1,1,1,1,0,0,0,0,1,0,0,0,0,0,0,1,0,1,0,0,0,0
+"116","Grammarly",4.3,"$94k-$136k","San Francisco","CA","51-200","Consumer Product Rental",1,1,1,0,1,0,0,0,1,0,0,1,0,1,0,0,0,1,0,0,1,0
+"117","Walmart eCommerce",3.2,"$112k-$154k","San Bruno","CA","1001-5000","Internet",0,1,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0
+"118","Arbor",3.3,"$139k-$193k","Baltimore","MD","201-500","Enterprise Software & Network Solutions",0,1,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"119","PTP",4,"$75k-$108k","Gold River","CA","51-200","IT Services",0,1,0,1,0,1,0,0,0,1,1,0,0,0,0,0,0,1,0,0,0,0
+"120","Convoy",5,"$85k-$125k","Seattle","WA","51-200","Trucking",1,1,1,1,1,1,1,0,0,1,0,1,1,0,0,0,1,1,0,0,0,1
+"121","Stripe",4.1,"$141k-$196k","San Francisco","CA","501-1000","Internet",1,1,1,0,0,0,1,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0
+"122","Chubb Corp",3.2,"$113k-$171k","Whitehouse Station","NJ","10000--1","Insurance Carriers",1,1,1,1,0,1,1,0,1,1,0,1,0,0,1,1,0,1,0,0,0,1
+"123",NA,4.1,NA,"ver","CO","201-500","IT Services",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"124","Global Executive Solutions Group",3.7,NA,"Fayetteville","AR","1-50","Staffing & Outsourcing",0,1,0,0,0,0,1,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0
+"125","Principal Financial Group",3.5,"$39k-$50k","Des Moines","IA","10000--1","Investment Banking & Asset Management",1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0
+"126","Quantlab",3.9,"$136k-$203k","Houston","TX","51-200","Investment Banking & Asset Management",0,1,0,0,1,1,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0
+"127","Fabergent USA",4.8,"$60k-$98k","Harrisburg","PA","51-200","IT Services",0,1,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"128","Apex Systems",3.4,NA,"Carlsbad","CA","1001-5000","Staffing & Outsourcing",1,1,0,1,1,1,0,0,0,0,0,1,0,1,0,0,0,0,0,1,1,0
+"129","Monsanto Company",3.9,"$90k-$134k","Saint Louis","MO","10000--1","Food Production",0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"130","Franklin Templeton Investments",3.6,"$68k-$107k",NA,NA,"5001-10000","Investment Banking & Asset Management",1,1,1,1,1,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,0,0
+"131","Jane Street",4.3,"$131k-$195k","New York","NY","501-1000","Investment Banking & Asset Management",0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+"132","IBM",3.5,"$65k-$96k",NA,NA,"10000--1",NA,0,1,1,1,0,0,0,1,1,0,1,0,0,0,1,0,0,0,0,0,0,0
+"133","Domo",4.3,"$74k-$109k","Salt Lake City","UT","501-1000","Computer Hardware & Software",1,1,0,1,0,1,0,0,1,1,1,1,1,0,1,1,0,1,0,0,0,1
+"134","Twitter",3.9,"$134k-$184k","San Francisco","CA","1001-5000","Internet",1,1,1,1,1,0,1,0,0,0,0,1,0,1,0,0,1,1,0,0,0,0
+"135","Sitecore",3.1,"$127k-$176k","Sausalito","CA","501-1000","Computer Hardware & Software",1,1,0,1,1,1,1,0,1,0,0,1,0,0,0,0,0,0,0,0,1,0
+"136","Limeade",3.5,"$80k-$115k","Bellevue","WA","51-200","Enterprise Software & Network Solutions",1,1,1,1,0,1,1,0,0,0,0,1,1,0,1,0,0,1,0,0,0,0
+"137","Tuft & Needle",5,"$69k-$100k","Mesa","AZ","51-200","Home Furniture & Housewares Stores",1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0
+"138","National Grid USA",3.5,"$62k-$96k","Waltham","MA","10000--1","Utilities",1,1,1,1,1,1,1,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0
+"139","Altamira Technologies",4.1,"$99k-$147k","Alexandria","VA","201-500","IT Services",1,1,1,1,0,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,1
+"140","Udemy",4.4,"$77k-$99k","San Francisco","CA","201-500","Education Training Services",1,1,0,1,1,0,1,0,0,0,0,1,0,1,0,0,0,1,0,0,1,0
+"141","IntraEdge",3.9,"$77k-$118k","Phoenix","AZ","501-1000","IT Services",1,1,1,0,0,0,1,0,0,0,0,1,0,0,1,1,0,0,0,0,1,0
+"142","Newsela",3.8,"$122k-$184k","New York","NY","51-200","Internet",1,1,1,1,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,1,0
+"143","TrueMotion",4.9,"$98k-$141k","Boston","MA","1-50","Computer Hardware & Software",1,1,1,1,1,1,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,1
+"144","Vertical Knowledge",4,"$86k-$123k","Cleveland","OH","51-200","IT Services",0,1,0,0,0,1,0,1,0,0,0,0,1,0,0,0,0,0,1,0,0,1
+"145","IBM",3.5,"$73k-$107k","Dallas","TX","10000--1",NA,0,1,1,1,0,0,0,1,1,0,1,0,0,0,1,0,0,0,0,0,0,0
+"146","Uber",4.2,"$74k-$110k","Pittsburgh","PA","10000--1","Computer Hardware & Software",1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"147","NBCNEWS.com",3.2,"$137k-$207k","New York","NY","201-500","Motion Picture Production & Distribution",1,1,1,1,0,1,1,1,0,1,1,1,0,0,1,1,1,1,1,0,1,1
+"148","Epiworks",4.7,"$66k-$101k","Champaign","IL","51-200","Electrical & Electronic Manufacturing",1,1,0,0,1,1,0,0,0,0,0,1,0,0,1,0,0,1,0,1,0,0
+"149","BCForward",3.5,NA,"Indianapolis","IN","1001-5000","IT Services",1,1,1,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0
+"150","Capital Group",3.8,"$73k-$113k","San Antonio","TX","5001-10000","Investment Banking & Asset Management",0,1,1,1,0,1,0,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0
