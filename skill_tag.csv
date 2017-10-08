@@ -1,33 +1,33 @@
 "","skill","n"
-"1","statistics",49
-"2","python",37
-"3","machine learning",35
-"4","engineering",31
-"5","computer science",29
-"6","r",28
-"7","mathematics",22
-"8","economics",19
-"9","sql",16
-"10","data mining",15
-"11","java",15
-"12","operations research",14
-"13","physics",14
-"14","hive",13
-"15","sas",12
-"16","applied mathematics",10
-"17","clustering",10
-"18","econometrics",10
-"19","hadoop",10
-"20","math",10
-"21","genetic information",9
-"22","spark",9
-"23","algorithms",8
-"24","data science",8
-"25","deep learning",8
-"26","development",8
-"27","marketing",8
-"28","matlab",8
-"29","statistical analysis",8
-"30","statistical modeling",8
-"31","modeling",7
-"32","predictive modeling",7
+"1","statistics",405
+"2","machine learning",307
+"3","r",302
+"4","python",271
+"5","computer science",240
+"6","mathematics",220
+"7","engineering",210
+"8","data mining",188
+"9","economics",142
+"10","java",131
+"11","sas",129
+"12","physics",110
+"13","operations research",108
+"14","spark",104
+"15","clustering",103
+"16","hadoop",96
+"17","matlab",94
+"18","hive",91
+"19","expression",86
+"20","sql",86
+"21","algorithms",85
+"22","finance",71
+"23","scala",65
+"24","applied mathematics",64
+"25","time series",59
+"26","development",56
+"27","math",56
+"28","econometrics",55
+"29","c++",54
+"30","data science",53
+"31","regression",53
+"32","bayesian methods",51

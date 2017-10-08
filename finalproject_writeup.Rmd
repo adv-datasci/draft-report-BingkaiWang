@@ -1,0 +1,32 @@
+---
+title: "Analysis of American Data Scientist Jobs: Skills, Salary and Satisfaction"
+author: "Bingkai Wang"
+date: "October 7, 2017"
+output: pdf_document
+fontsize: 12pt
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## 1 Introduction
+
+## 2 Data
+
+Job data was scraped from 'Glassdoor'(www.glassdoor.com) with title "data scientist" using `rvest` package in `r`. Glassdoor is a job search engine and outperforms others in the sense that it contains reviews of employees to the companies and positions. From this website, 990 job postings were scraped in September 2017 with feature: company name, rating, salary, location (city, state), company size, industry and full text of job description. (Glassdoor API is not accessible for students and only 1000 jobs can be viewed by normal users.)
+722 out of 990 job postings contain no missing value. For explortary analysis, missing values are ommited. For inferencial analysis, for simplicity, only complete cases are used. Among these variables, rating is the overall rating of all ratings of all time. Salary is preprocessed to be the mean of the salary range provided in the website. 
+
+## 3 Methods
+
+### 3.1 Identification of 'skills' from job descriptions
+
+### 3.2 Linear models for salary and employees' satisfaction
+
+## Results
+
+### 3.1 Explortory analysis
+
+### 3.2 Factors impacting salary and satisfaction
+
+## Discussion
