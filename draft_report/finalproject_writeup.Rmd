@@ -53,7 +53,7 @@ Given the skill-company matrix we get, we can perform statistical analysis on sa
 $$ salary \sim skill_1 + skill_2 + \dots + skill_k + \varepsilon$$.
 Then we extract and report those skills with significant parameters (p < 0.1).
 
-Apart from salary, employees" ratings of company can be regarded as an index for their satisfaction of this job. Hence we also studied which factors can influnce satisfaction from company size, location, salary and industry. Skills are not included since they don"t have much causal connection. For categorical variable such as company size, location and industry, we used ANOVA for them and rating. For continuous variable salary, we used two samples t-test. The signification factor would be reported.
+Apart from salary, employees" ratings of company can be regarded as an index for their satisfaction of this job. Hence we also studied which factors can influnce satisfaction from company size, location, salary and industry. Skills are not included since they don"t have much causal connection. For categorical variable such as company size, location and industry, we used ANOVA for them and rating. When anaylzing, we remove those categories with small samples to reduce noises. For continuous variable salary, we used two samples t-test. The signification factor would be reported.
 
 ## 4 Results
 
