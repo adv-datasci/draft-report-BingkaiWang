@@ -26,7 +26,8 @@ stop_words <- c("color", "religion", "national origin", "sexual orientation", "e
                 "develop", "tools", "veteran status", "dental", "implement", NA,
                 "complex", "pregnancy", "processes", "race", "ancestry", "build",
                 "ca", "data", "maintain", "technology", "product managers", "e.g", "etc",
-                "experience", "analyze", "genetic information", "services", "state")
+                "experience", "analyze", "genetic information", "services", "state",
+                "development", "mathematics")
 dictionary <- dictionary[!(dictionary$skill %in% stop_words), ]
 print(dictionary, n = 50)
 write.csv(dictionary, "skill_tag.csv")
